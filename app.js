@@ -26,7 +26,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', index);
 app.use('/blog', blog);
 app.use('/users', users);
-app.use(express.static('dist'));
+app.use(express.static('client/dist'));
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
