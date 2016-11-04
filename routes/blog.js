@@ -4,39 +4,31 @@ var mongoose = require('mongoose');
 var schema = require('../model/schema');
 var database = require('../model/database');
 
-/* GET blog. */
+/* GET all blog messages */
 router.get('/get', function(req, res, next) {
-    schema.Blog.findOne({}, function (err, blog) {
-        if (err)
-        {
-            console.log(err);
-            res.send(err);
-        }
-        res.send(blog);
-    });
+  schema.Blog.find({}).exec(function (err, blogs) {
+    if (err)
+      return console.error(err);
+    console.log("Load success: ", blogs);
+    res.send(blogs);
+  });
+
 });
 
-/* GET blog. */
+/* POST single blog post */
 router.post('/post', function(req, res, next) {
     var instance = new schema.Blog(req.body);
-/*** Example post body:
- {"title":  "My best book",
-         "author": "Morten Mathiasen",
-         "body":   "Hello everyone",
-         "comments": [ {"comment": "Not good blog post"} ],
-         "hidden": false,
-         "meta": {
-             "votes": 5,
-             "favs":  15
-         }}
- ***/
+/** Example post body:
+  {
+    "author": "Morten Mathiasen",
+    "body": "Hello everyone"
+  }
+ **/
      instance.save(function (err, Blog) {
-     if (err)
-     return console.error(err);
-     console.log("Save success: ", Blog);
+       result = err?err:Blog;
+       res.send(result);
+       return result;
      });
-
-    res.send('blog post');
 });
 
 //export the router
