@@ -1,6 +1,6 @@
 import { browser, element, by } from 'protractor';
 
-export class Untitled6Page {
+export class MEAN2Page {
   navigateTo() {
     return browser.get('/');
   }

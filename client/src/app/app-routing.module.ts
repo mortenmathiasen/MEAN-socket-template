@@ -8,4 +8,4 @@ const routes: Routes = [];
   exports: [RouterModule],
   providers: []
 })
-export class Untitled6RoutingModule { }
+export class MEAN2RoutingModule { }
