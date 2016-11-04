@@ -2,11 +2,19 @@
 
 This MEAN project is based on Mongoose, Express, Angular2 and NodeJS. 
 
-## Get up and running
-1) Install NodeJS(https://nodejs.org)
-2) Install Mongo(https://www.mongodb.com)
-3) Copy this project and open root folder
-4) npm prepare
-5) npm build
-6) npm serve
-7) Open in your browser http://localhost:3000/index.html(http://localhost:3000/index.html)
+## Install requisities
+1. Install NodeJS(https://nodejs.org)
+2. Install Mongo(https://www.mongodb.com)
+
+## Clone project
+1. Copy this project and open root folder
+
+## Serve project for automatic updates during development
+1. npm prepare
+2. npm build
+3. npm serve
+
+## Access running solution
+1. Open your browser(http://localhost:3000/index.html)
+
+
