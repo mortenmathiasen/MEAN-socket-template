@@ -6,8 +6,9 @@ This MEAN project is based on Mongoose, Express, Angular2 and NodeJS.
 1. Install NodeJS(https://nodejs.org)
 2. Install Mongo(https://www.mongodb.com)
 
-## Clone project
-1. Copy this project and open root folder
+## Setup programming environment
+1. Start mongo database deamon: mongod
+2. Copy this project and open root folder
 
 ## Serve project for automatic updates during development
 1. npm prepare
