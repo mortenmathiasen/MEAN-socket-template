@@ -1,13 +1,14 @@
 # MEAN2
 
-This MEAN project is based on Mongoose, Express, Angular2 and NodeJS. 
+This template project for building MEAN applications is based on Mongoose, Express, Angular2 and NodeJS. Below instructions explain how to get started programming using this template.
 
 ## Install requisities
-1. Install NodeJS(https://nodejs.org)
-2. Install Mongo(https://www.mongodb.com)
+1. Install NodeJS (https://nodejs.org)
+2. Install Angular CLI (https://cli.angular.io)
+3. Install Mongo (https://www.mongodb.com)
 
 ## Setup programming environment
-1. Start mongo database daemon: mongod
+1. Start mongo database daemon mongod locally
 2. Copy this project and open root folder
 
 ## Serve project for automatic updates during development
@@ -16,8 +17,10 @@ This MEAN project is based on Mongoose, Express, Angular2 and NodeJS.
 3. npm run serve
 
 ## Access running solution
-1. Open your browser(http://localhost:3000/index.html)
+1. Open your localhost in browser (http://127.0.0.1:3000/index.html)
 
+## Enjoy developement
+Now you have a running project that is automatically rebuild when you change source files are changed.
 
 ## License
 
