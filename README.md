@@ -14,7 +14,7 @@ This template project for building MEAN applications is based on Mongoose, Expre
 ## Serve project for automatic updates during development
 1. npm run prepare
 2. npm run build
-3. npm run serve
+3. npm run start
 
 ## Access running solution
 1. Open your localhost in browser (http://127.0.0.1:3000/index.html)

@@ -5,7 +5,7 @@
   "scripts": {
     "prepare": "npm install ; cd client ; npm install",
     "build": "cd client ; ng build --watch true --output-path dist",
-    "serve": "./bin/www"
+    "start": "./bin/www"
   },
   "dependencies": {
     "body-parser": "~1.15.2",
