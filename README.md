@@ -2,6 +2,9 @@
 
 This template project for building MEAN applications is based on Mongoose, Express, Angular2 and NodeJS. Below instructions explain how to get started programming using this template.
 
+## Online test
+You can try the template application at (https://mean2deploy.herokuapp.com/). The online example is deployed to free services at Heroku (https://www.heroku.com) and mLab (https://mlab.com).
+
 ## Install requisities
 1. Install NodeJS (https://nodejs.org)
 2. Install Angular CLI (https://cli.angular.io)
