@@ -10,14 +10,15 @@ You can try the template application at (https://mean2deploy.herokuapp.com/). Th
 2. Install Angular CLI (https://cli.angular.io)
 3. Install Mongo (https://www.mongodb.com)
 
-## Setup programming environment
-1. Start mongo database daemon mongod locally
-2. Copy this project and open root folder
+## Get the software
+1. Clone this project
+2. Open root folder in terminal
+3. Execute: npm run prepare
 
 ## Serve project for automatic updates during development
-1. npm run prepare
-2. npm run build
-3. npm run start
+1. Start mongo daemon, learn how on (https://docs.mongodb.com/manual/administration/install-community/)
+2. Execute: npm run build
+3. Execute: npm run start
 
 ## Access running solution
 1. Open your localhost in browser (http://127.0.0.1:3000/index.html)
