@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "prepare": "npm install ; cd client ; npm install",
+    "prepare": "cd client ; npm install",
     "build": "cd client ; ng build --watch true --output-path dist",
     "start": "./bin/www"
   },
