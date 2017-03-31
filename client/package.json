@@ -1,13 +1,14 @@
 {
-  "name": "MEAN2client",
+  "name": "mean-ng2",
   "version": "0.0.0",
   "license": "MIT",
-  "angular-cli": {},
   "scripts": {
-    "lint": "tslint \"src/**/*.ts\"",
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
     "test": "ng test",
-    "pree2e": "webdriver-manager update",
-    "e2e": "protractor"
+    "lint": "ng lint",
+    "e2e": "ng e2e"
   },
   "private": true,
   "dependencies": {
@@ -19,10 +20,8 @@
     "@angular/platform-browser": "^4.0.0",
     "@angular/platform-browser-dynamic": "^4.0.0",
     "@angular/router": "^4.0.0",
-    "bootstrap": "^3.3.7",
     "core-js": "^2.4.1",
     "rxjs": "^5.1.0",
-    "ts-helpers": "^1.1.1",
     "zone.js": "^0.8.4"
   },
   "devDependencies": {

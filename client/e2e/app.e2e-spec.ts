@@ -1,10 +1,10 @@
-import { MEAN2Page } from './app.po';
+import { MEANNG2Page } from './app.po';
 
-describe('MEAN2 App', function() {
-  let page: MEAN2Page;
+describe('mean-ng2 App', () => {
+  let page: MEANNG2Page;
 
   beforeEach(() => {
-    page = new MEAN2Page();
+    page = new MEANNG2Page();
   });
 
   it('should display message saying app works', () => {

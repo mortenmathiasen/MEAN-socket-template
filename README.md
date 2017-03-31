@@ -23,7 +23,7 @@ You can try the template application at (https://mean2deploy.herokuapp.com/). Th
 Now you have a running project that is automatically rebuild when source files are changed.
 
 ## Access running solution
-1. Open your localhost in browser (http://127.0.0.1:3000/index.html)
+1. Open your localhost in browser (http://127.0.0.1:3000/)
 
 ## License
 
