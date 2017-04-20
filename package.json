@@ -3,8 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "prepare": "cd client ; npm install",
-    "build": "cd client ; ng build --watch true --output-path dist",
+    "prepare": "node -e \"console.log(child_process.execFileSync('npm', ['install'], {cwd: 'client'}).toString('utf8'))\"",
+    "build": "node -e \"console.log(child_process.execFileSync('ng', ['build','--watch','false','--output-path','dist'], {cwd: 'client'}).toString('utf8'))\"",
     "start": "./bin/www"
   },
   "dependencies": {
