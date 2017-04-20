@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "prepare": "node -e \"console.log(child_process.execFileSync('npm', ['install'], {cwd: 'client'}).toString('utf8'))\"",
+    "prepare": "node -e \"console.log(child_process.execFileSync(os.type()==='Windows_NT'?'npm.cmd':'npm', ['install'], {cwd: 'client'}).toString('utf8'))\"",
     "build": "node -e \"console.log(child_process.execFileSync('ng', ['build','--watch','false','--output-path','dist'], {cwd: 'client'}).toString('utf8'))\"",
     "start": "./bin/www"
   },
