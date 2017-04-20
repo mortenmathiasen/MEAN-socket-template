@@ -4,8 +4,8 @@
   "private": true,
   "scripts": {
     "prepare": "node -e \"console.log(child_process.execFileSync(os.type()==='Windows_NT'?'npm.cmd':'npm', ['install'], {cwd: 'client'}).toString('utf8'))\"",
-    "build": "node -e \"console.log(child_process.execFileSync('ng', ['build','--watch','false','--output-path','dist'], {cwd: 'client'}).toString('utf8'))\"",
-    "start": "./bin/www"
+    "build": "node -e \"console.log(child_process.execFileSync(os.type()==='Windows_NT'?'ng.cmd':'ng', ['build','--watch','false','--output-path','dist'], {cwd: 'client'}).toString('utf8'))\"",
+    "start": "node ./bin/www"
   },
   "dependencies": {
     "body-parser": "~1.15.2",
