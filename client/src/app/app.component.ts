@@ -24,7 +24,7 @@ export class AppComponent {
         blogMsg => {
           //console.log("Messages:",messages);
           this.model = blogMsg;
-          this.getBlogs();
+          //this.getBlogs();
         },
         error =>  this.title = <any>error
       );

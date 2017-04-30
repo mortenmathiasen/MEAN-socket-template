@@ -2,24 +2,36 @@ import { Injectable }     from '@angular/core';
 import { Http, Response, Headers, RequestOptions } from '@angular/http';
 import { Blog }           from './Blog';
 import { Observable }     from 'rxjs/Observable';
+import * as io from 'socket.io-client';
 
 @Injectable()
 export class BlogService {
   private getBlogsUrl = 'blog/get';  // URL to web API
   private postBlogUrl = 'blog/post';  // URL to web API
   constructor (private http: Http) {}
+  private socket;
+  private url = window.location.origin;
 
   /*
    * Get blog messages from server
    */
   getBlogs (): Observable<Blog[]> {
-    return this.http.get(this.getBlogsUrl)
-      .map(this.extractData)
-      .catch(this.handleError);
+    let observable = new Observable(observer => {
+      console.log("Socket:",this.url);
+      this.socket = io(this.url);
+      this.socket.on('refresh', (data) => {
+        observer.next(data);
+      });
+
+      return () => {
+        this.socket.disconnect();
+      };
+    });
+    return observable;
   }
 
   /*
-   * Send blog meassge to server
+   * Send blog message to server
    */
   addBlog (blog: Blog): Observable<Blog> {
     let headers = new Headers({ 'Content-Type': 'application/json' });
