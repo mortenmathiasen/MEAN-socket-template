@@ -12,9 +12,9 @@
   },
   "private": true,
   "dependencies": {
+    "@angular/core": "^4.0.1",
     "@angular/common": "^4.0.0",
     "@angular/compiler": "^4.0.0",
-    "@angular/core": "^4.0.0",
     "@angular/forms": "^4.0.0",
     "@angular/http": "^4.0.0",
     "@angular/platform-browser": "^4.0.0",
@@ -25,9 +25,8 @@
     "zone.js": "^0.8.4"
   },
   "devDependencies": {
-    "@angular/cli": "1.0.0",
+    "@angular/cli": "1.4.9",
     "@angular/compiler-cli": "^4.0.0",
-    "@angular/core": "^4.0.1",
     "@types/jasmine": "2.5.38",
     "@types/node": "~6.0.60",
     "codelyzer": "~2.0.0",
