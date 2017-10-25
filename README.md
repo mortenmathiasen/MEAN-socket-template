@@ -1,11 +1,13 @@
 # MEAN2
 
-This template project for building MEAN applications is based on Mongoose, Express, Angular2 and NodeJS. Below instructions explain how to get started programming using this template.
+This template project for building MEAN applications is based on Mongoose, Express, Angular and NodeJS. The template uses the [Angular CLI](https://cli.angular.io/) build system for compilation and deployment of the frontend application into the [NodeJS](https://nodejs.org) server.
+
+Below instructions explain how to get started using this template, either with or without live updates as source files changes.
 
 ## Online test
 You can try the template application at (https://mean2deploy.herokuapp.com/). The online example is deployed to free services at Heroku (https://www.heroku.com) and mLab (https://mlab.com).
 
-## Install requisities
+## Install prerequisities
 1. Install NodeJS (https://nodejs.org)
 2. Install Angular CLI (https://cli.angular.io)
 3. Install Mongo (https://www.mongodb.com)
@@ -13,19 +15,19 @@ You can try the template application at (https://mean2deploy.herokuapp.com/). Th
 ## Get the software
 1. Clone this project
 2. Open root folder in terminal
-3. Execute: npm install
+3. Execute: npm prepare
+4. Execute: npm install
+
+## Start database
+1. Start mongo daemon, learn how on (https://docs.mongodb.com/manual/administration/install-community/)
 
 ## Run
-1. Start mongo daemon, learn how on (https://docs.mongodb.com/manual/administration/install-community/)
-2. Execute: npm run build
-3. Execute: npm run start
-Now you have a running project.
+1. Execute: npm run build
+2. Execute: npm run start
 
 ## Run with live updates
-1. Start mongo daemon, learn how on (https://docs.mongodb.com/manual/administration/install-community/)
-2. Execute: npm run live_build
-3. Execute: npm run live_start
-Now you have a running project that is automatically rebuild when source files are changed.
+1. Execute: npm run live_build
+2. Execute: npm run live_start
 
 ## Access running solution
 1. Open your localhost in browser (http://127.0.0.1:3000/)
@@ -34,7 +36,7 @@ Now you have a running project that is automatically rebuild when source files a
 
 The MIT License
 
-Copyright (c) 2016 Morten Mathiasen, Business Academy Aarhus (http://www.baaa.dk/)
+Copyright (c) 2017 Morten Mathiasen, Business Academy Aarhus (http://www.baaa.dk/)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
