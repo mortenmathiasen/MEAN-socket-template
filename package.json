@@ -4,7 +4,9 @@
   "private": true,
   "scripts": {
     "build": "node -e \"console.log(child_process.execSync(os.type()==='Windows_NT'?'ng.cmd build --watch false --output-path dist':'ng build --watch false --output-path dist', {cwd: 'client'}).toString('utf8'))\"",
-    "start": "node ./bin/www"
+    "start": "node ./bin/www",
+    "live_build": "node -e \"console.log(child_process.execSync(os.type()==='Windows_NT'?'ng.cmd build --watch true --output-path dist':'ng build --watch true --output-path dist', {cwd: 'client'}).toString('utf8'))\"",
+    "live_start": "node ./node_modules/nodemon/bin/nodemon.js"
   },
   "dependencies": {
     "body-parser": "~1.15.2",
@@ -15,5 +17,8 @@
     "mongoose": "^4.6.6",
     "morgan": "~1.7.0",
     "serve-favicon": "~2.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.12.1"
   }
 }

@@ -15,11 +15,16 @@ You can try the template application at (https://mean2deploy.herokuapp.com/). Th
 2. Open root folder in terminal
 3. Execute: npm install
 
-## Serve project
+## Run
 1. Start mongo daemon, learn how on (https://docs.mongodb.com/manual/administration/install-community/)
 2. Execute: npm run build
 3. Execute: npm run start
+Now you have a running project.
 
+## Run with live updates
+1. Start mongo daemon, learn how on (https://docs.mongodb.com/manual/administration/install-community/)
+2. Execute: npm run live_build
+3. Execute: npm run live_start
 Now you have a running project that is automatically rebuild when source files are changed.
 
 ## Access running solution
