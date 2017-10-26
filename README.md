@@ -1,6 +1,6 @@
-# MEAN-template
+# MEAN-socket-template
 
-This template project for building MEAN applications is based on Mongoose, Express, Angular and NodeJS. The template uses the [Angular CLI](https://cli.angular.io/) build system for compilation and deployment of the frontend application into the [NodeJS](https://nodejs.org) server.
+This template project for building MEAN applications is based on Mongoose, Express, Angular, NodeJS and Socket IO. The template uses the [Angular CLI](https://cli.angular.io/) build system for compilation and deployment of the frontend application into the [NodeJS](https://nodejs.org) server.
 
 Below instructions explain how to get started using this template, either with or without live updates as source files changes.
 
