@@ -1,8 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Blog } from './blog';
-import { Http, Response } from '@angular/http';
 import './rxjs-operators';
-import { BlogService } from "./blog.service";
+import { BlogService } from './blog.service';
 
 @Component({
   selector: 'app-root',
@@ -10,32 +9,32 @@ import { BlogService } from "./blog.service";
   styleUrls: ['./app.component.css'],
   providers: [BlogService]
 })
-export class AppComponent {
-  isSubmitted: boolean = false;
-  title = 'MEAN app with Angular';
-  model = new Blog("", "");
+export class AppComponent implements OnInit {
+  isSubmitted = false;
+  title = 'MEAN app with Socket IO';
+  model = new Blog('', '');
   public blogMessages = [];
 
-  constructor (private http: Http, private blogService: BlogService) {}
+  constructor (private blogService: BlogService) {}
 
   submitBlog() {
     this.blogService.addBlog(this.model)
       .subscribe(
         blogMsg => {
-          //console.log("Messages:",messages);
+          // console.log("Messages:", messages);
           this.model = blogMsg;
-          //this.getBlogs();
+          // this.getBlogs();
         },
         error =>  this.title = <any>error
       );
   }
 
   getBlogs() {
-    console.log("Subscribe to service");
+    console.log('Subscribe to service');
     this.blogService.getBlogs()
       .subscribe(
         messages => {
-          //console.log("Messages:",messages);
+          // console.log("Messages:",messages);
           this.blogMessages = messages;
         },
         error =>  this.title = <any>error
@@ -45,5 +44,4 @@ export class AppComponent {
   ngOnInit() {
     this.getBlogs();
   }
-
 }
