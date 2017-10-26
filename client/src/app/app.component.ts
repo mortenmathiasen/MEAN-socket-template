@@ -12,7 +12,7 @@ import { BlogService } from "./blog.service";
 })
 export class AppComponent {
   isSubmitted: boolean = false;
-  title = 'MEAN app with Angular2';
+  title = 'MEAN app with Angular';
   model = new Blog("", "");
   public blogMessages = [];
 

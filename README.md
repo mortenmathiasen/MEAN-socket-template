@@ -1,4 +1,4 @@
-# MEAN2
+# MEAN-template
 
 This template project for building MEAN applications is based on Mongoose, Express, Angular and NodeJS. The template uses the [Angular CLI](https://cli.angular.io/) build system for compilation and deployment of the frontend application into the [NodeJS](https://nodejs.org) server.
 
