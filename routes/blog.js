@@ -25,24 +25,20 @@ router.post('/post', function(req, res, next) {
      }
      **/
 
-    console.log("Hallo 1");
+    schema.Blog.find({}).sort({_id:-1}).skip(10).exec(function (err, blogs) {
+        console.log("Hallo 2");
+        if (err)
+            return console.error(err);
+        console.log("Loader success: ", blogs);
+        blogs.forEach(function(blog){
+            console.log("Loader success: ", blog);
+            schema.Blog.findByIdAndRemove(blog._id).exec();
+        });
+    });
 
     instance.save(function (err, Blog) {
         result = err?err:Blog;
-
-        schema.Blog.find({}).sort({_id:-1}).skip(10).exec(function (err, blogs) {
-            console.log("Hallo 2");
-            if (err)
-                return console.error(err);
-            console.log("Loader success: ", blogs);
-            blogs.forEach(function(blog){
-                console.log("Loader success: ", blog);
-                schema.Blog.findByIdAndRemove(blog._id).exec();
-            });
-
-            res.send(result);
-        });
-
+        res.send(result);
         return result;
     });
 });
