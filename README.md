@@ -5,7 +5,7 @@ This template project for building MEAN applications is based on Mongoose, Expre
 Below instructions explain how to get started using this template, either with or without live updates as source files changes.
 
 ## Online test
-You can try the template application at (https://mean2deploy.herokuapp.com/). The online example is deployed to free services at Heroku (https://www.heroku.com) and mLab (https://mlab.com).
+You can try the template application at (https://mean-socket-template.herokuapp.com/). The online example is deployed to free services at Heroku (https://www.heroku.com) and mLab (https://mlab.com).
 
 ## Install prerequisities
 1. Install NodeJS (https://nodejs.org)
