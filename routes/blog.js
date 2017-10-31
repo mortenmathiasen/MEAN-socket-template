@@ -24,10 +24,21 @@ router.post('/post', function(req, res, next) {
        "body": "Hello everyone"
      }
      **/
+
+    schema.Blog.find({}).sort({_id:-1}).skip(10).exec(function (err, blogs) {
+        console.log("Hallo 2");
+        if (err)
+            return console.error(err);
+        console.log("Loader success: ", blogs);
+        blogs.forEach(function(blog){
+            console.log("Loader success: ", blog);
+            schema.Blog.findByIdAndRemove(blog._id).exec();
+        });
+    });
+
     instance.save(function (err, Blog) {
         result = err?err:Blog;
         res.send(result);
-        router.notifyclients();
         return result;
     });
 });
