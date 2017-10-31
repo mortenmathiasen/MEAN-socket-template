@@ -39,6 +39,7 @@ router.post('/post', function(req, res, next) {
     instance.save(function (err, Blog) {
         result = err?err:Blog;
         res.send(result);
+        router.notifyclients();
         return result;
     });
 });
