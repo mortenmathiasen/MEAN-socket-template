@@ -2,11 +2,17 @@
 
 import { TestBed, async } from '@angular/core/testing';
 import { AppComponent } from './app.component';
+import { FormsModule } from '@angular/forms';
+import { HttpModule } from '@angular/http';
 
 describe('App: MEAN2', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [
+        imports: [
+            FormsModule,
+            HttpModule
+        ],
+        declarations: [
         AppComponent
       ],
     });
@@ -18,16 +24,16 @@ describe('App: MEAN2', () => {
     expect(app).toBeTruthy();
   }));
 
-  it(`should have as title 'app works!'`, async(() => {
+  it(`should have as title 'MEAN app with Angular'`, async(() => {
     let fixture = TestBed.createComponent(AppComponent);
     let app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('app works!');
+    expect(app.title).toEqual('MEAN app with Angular');
   }));
 
   it('should render title in a h1 tag', async(() => {
     let fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     let compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('h1').textContent).toContain('app works!');
+    expect(compiled.querySelector('h1').textContent).toContain('MEAN app with Angular');
   }));
 });
