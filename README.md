@@ -15,8 +15,7 @@ You can try the template application at (https://mean-socket-template.herokuapp.
 ## Get the software
 1. Clone this project
 2. Open root folder in terminal
-3. Execute: npm run prepare
-4. Execute: npm install
+3. Execute: npm install
 
 ## Start database
 1. Start mongo daemon, learn how on (https://docs.mongodb.com/manual/administration/install-community/)
